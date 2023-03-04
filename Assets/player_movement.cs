@@ -15,9 +15,9 @@ public class player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = input.GetAxis("Horizontal");
-        float moveVertical = input.GetAxis("Vertical");
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-        rb2d.velocity = new vector2(moveHorizontal * speed, moveVertical * speed);
+        rb2d.velocity = new Vector2(moveHorizontal * speed, moveVertical * speed);
     }
 }
