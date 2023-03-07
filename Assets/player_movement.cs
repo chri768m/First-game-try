@@ -11,12 +11,13 @@ public class player_movement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D> ();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) == true)
+        if (Input.GetKeyDown(KeyCode.Space) == true)
         {
             rb2d.velocity += Vector2.up * jump;
         }
